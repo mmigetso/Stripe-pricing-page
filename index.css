@@ -4,6 +4,7 @@
 }
 body{
   background: #f6f9fc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .container {
@@ -35,7 +36,6 @@ header:hover{
 .logo h1{
   font-size: 30px;
   font-weight: 600;
-  font-family: sans-serif;
   color: #0a2540;
 }
 
@@ -59,7 +59,6 @@ header:hover{
    padding: 12px 12px 14px;
    font-size: 18px;
    color: #0a2540;
-   font-family: Helvetica, sans-serif;
    transition: color  0.3s;
 }
 
@@ -101,7 +100,7 @@ header:hover{
   background: #635bff;
   color: white;
   border-radius: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: inherit;
   margin-left: 5px;
 }
 
@@ -204,7 +203,6 @@ header:hover{
   text-align: center;
   color: #425466;
   font-size: 16px;
-  font-family: Helvetica, sans-serif
 }
 
 
@@ -235,6 +233,7 @@ header:hover{
   display:flex;
   align-items:center;
   justify-content:center;
+  font-family:inherit;
 }
 
 .pricing{
@@ -258,7 +257,7 @@ header:hover{
     font-size: 16px;
     color: white;
     font-weight: bold;
-    font-family: sans-serif;
+   
 }
 
 /*hero section responsve desin*/
@@ -287,9 +286,7 @@ header:hover{
 }
 
 /*--------------Designing the features section-------------*/
-.features{
-  
-}
+
 .features-cards{
     display:grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -299,7 +296,6 @@ header:hover{
 .features h1{
   color: #0a2540;
   font-size: 24px;
-  font-family: Helvetica, sans-serif;
   margin: 20px 0px;
 }
 
@@ -310,7 +306,6 @@ header:hover{
 
 .features-card-items h1{
   font-size: 15px;
-  font-family: sans-serif;
   color: #0a2540;
   margin-bottom: -5px;
 
@@ -327,7 +322,7 @@ header:hover{
 .features-card-items li{
   color: #425466;
   font-size: 15px;
-  font-family: sans-serif;
+  
 }
 
 /*---------Designing the pricing section----------*/
@@ -365,6 +360,7 @@ header:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--space-lg);
+  background: var(--bg-white)
 }
 
 
@@ -378,7 +374,8 @@ header:hover{
   flex-direction:column;
 }
 
-.pricing-intro h2, span{
+.pricing-intro h2,
+.pricing-intro span {
   color: var(--bg-blue);
 }
 
@@ -397,7 +394,7 @@ header:hover{
   font-size: 15px;
   background: var(--bg-blue);
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: inherit;
   border: none;
   border-radius: 10px;
   display: flex;
@@ -411,17 +408,21 @@ header:hover{
   flex-direction:column;
   background: var(--bg-white);
   border-radius: 15px;
-  opacity: 3;
+  padding: 32px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
 }
 
-.pricing-package h2, .pricing-package p, .pricing-package h3{
-    padding-left: 32px;
+.pricing-support ul{
+  padding: 0;
+  margin: 10 0;
+  
 }
 
 .pricing-package li{
   font-size: 15px;
   color: var(--text-dark);
-  font-family: sans-serif;
+  
 }
 .pricing-products{
   display: grid;
@@ -429,6 +430,9 @@ header:hover{
   margin: 20px 0px 0px;
   gap: 10px;
   list-style: none;
+  padding: 0;
+
+ 
 }
 
 .pricing-support{
@@ -442,7 +446,7 @@ header:hover{
   margin-top: 40px;
   color: var(--text-dark);
   font-size: 15px;
-  font-family: sans-serif;
+ 
 }
 
 .pricing-support ul{
@@ -453,7 +457,7 @@ header:hover{
   font-size: 15px;
   color: var(--bg-blue);
   line-height: 28px;
-  font-family: sans-serif;
+  
 }
 
 .pricing-features {
@@ -461,6 +465,10 @@ header:hover{
 }
 
 .feature-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 0;
+  margin: 0;
   gap: 20px;
 }
 
@@ -476,3 +484,143 @@ header:hover{
   line-height: 20px;
 }
 
+/*-----designing pricing-extra-cards-----------*/
+.pricing-extra-cards-2{
+   background: var(--bg-white)
+}
+.investment-type-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 100px;
+  padding: 32px 0px;
+}
+
+.report-card{
+  display:flex;
+  flex-direction:column;
+  gap: var(--space-lg);
+}
+.report-card h1{
+  font-size: 26px;
+  color: var(--text-dark);
+}
+
+.report-card p{
+  font-size: 18px;
+  color: var(--text-muted);
+}
+
+.report-card button{
+  padding: 3px 0px 6px;
+  font-size: 15px;
+  color: var(--bg-blue);
+  border:none;
+  background: var(--bg-light);
+  max-width: 200px;
+  display: flex;
+  align-items:center;
+}
+
+.report-boxes{
+  padding: 24px;
+  width: 380px;
+  height: 384px;
+  position: relative;
+}
+
+.box-1{
+  width: 270px;
+  height: 366px;
+  background: var(--bg-white);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+.box-2{
+  width: 270px;
+  height: 340px;
+  background: var(--bg-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border-radius: 10px;
+}
+
+.report-card-text{
+  width: 222px;
+  height: 92px;
+  color: white;
+  
+}
+.report-card-text h2{
+  font-size: 15px;
+}
+
+.report-card-text h1{
+  font-size: 23px;
+  width: 222px;
+  height: 56px;
+}
+
+/*---------------------Category cards--------------*/
+.category-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-lg);
+}
+.header-card{
+  grid-column: 1 / -1
+}
+
+.main-card img{
+  height: auto;
+  padding: 24px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+
+
+}
+.main-card{
+   max-width: 720px;
+   border-radius: 10Px;
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   
+}
+
+@media (min-width: 900px) {
+  .main-card {
+    grid-column: 2 / -1;
+  }
+}
+
+.header-card h1{
+  font-size: 28px;
+  color: var(--text-dark);
+  max-width: 750px;
+}
+.sidebar-card ul{
+  padding: 0;
+  list-style: none;
+}
+
+
+.sidebar-card ul h1{
+  font-size: 24px;
+  color: var(--text-dark);
+}
+
+.sidebar-card ul p{
+   font-size: 15px;
+   color: var(--text-muted);
+}
+
+.footer-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin: 20px 0px 0px;
+}
